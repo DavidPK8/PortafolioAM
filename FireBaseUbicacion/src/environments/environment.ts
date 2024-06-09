@@ -4,16 +4,7 @@
 
 export const environment = {
   production: false,
-  firebaseConfig: {
-    apiKey: 'AIzaSyDBz6EMXQZ9KtCu6Oa6gagfWSt-IXQ_NdA',
-    authDomain: 'proyecto-bb77e.firebaseapp.com',
-    databaseURL: 'https://proyecto-bb77e-default-rtdb.firebaseio.com',
-    projectId: 'proyecto-bb77e',
-    storageBucket: 'proyecto-bb77e.appspot.com',
-    messagingSenderId: '202846291390',
-    appId: '1:202846291390:web:44bbea63782b23661b25ef',
-    measurementId: 'G-JKZHH331ME',
-  },
+  
 };
 
 /*
