@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Photo Gallery
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-grid size="6" *ngFor="let Photo of photoService.photos; let i = index">
+      <ion-img [src]="Photo.webviewPath"></ion-img>
+      <ion-button (click)="deletePhoto(i)" color="danger">Delete</ion-button>
+    </ion-grid>
+  </ion-row>
+</ion-content>
+
+<ion-content>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="addPhotoToGallery()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

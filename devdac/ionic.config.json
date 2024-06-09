@@ -1,0 +1,7 @@
+{
+  "name": "devdac",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

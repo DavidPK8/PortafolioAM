@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="poppins-bold">
+      GPS Location with Material Web
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">GPS Location with Material Web</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="ion-padding">
+    <ion-button (click)="getCurrentCoordinates()" expand="block">
+      Obtener localización
+    </ion-button>
+
+    <ion-list>
+      <ion-list-header>
+        <ion-label class="poppins-semibold">Coordenadas</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label class="poppins-regular"> Latitud </ion-label>
+        <ion-badge slot="end">{{latitude}}</ion-badge>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="poppins-regular"> Longitud</ion-label>
+        <ion-badge slot="end">{{longitude}}</ion-badge>
+      </ion-item>
+    </ion-list>
+
+   
+  </div>
+
+</ion-content>
